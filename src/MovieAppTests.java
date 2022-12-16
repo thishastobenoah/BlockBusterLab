@@ -38,5 +38,12 @@ class MovieAppTests {
 		//Assert - check that currentTime is 0
 		assertEquals(0, vhs1.getCurrentTime());
 	}
+	@Test
+	void test4 () {
+		VHS  vhs1  = new VHS ("Jumanji", 104);
+		vhs1.play();
+		assertEquals(1, vhs1.getCurrentTime());
+	}
+	
 
 }
